@@ -79,7 +79,7 @@ available:+
 docker run --name ecommerce-workshop-db --rm -e POSTGRES_USER=ecommerce -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=ecommerce-workshop -p 5435:5432 -d postgres:15.2-alpine
 ```
 
-You can try the application from Postman by importing the `ECommece Backend Testing Workshop.postman_collection.json` file, 
+You can try the application from Postman by importing the `ECommece Backend Testing Workshop.postman_collection.json` file,
 and running requests manually.
 
 
@@ -87,6 +87,15 @@ and running requests manually.
 
 ### Write Unit tests for Product service
 
+Some suggestions for test method names:
+- `findAllShouldReturnWithOrderDaoResponse`
+- `saveNewOrderShouldDecreaseProductInStock`
+- `saveExistingOrderShouldDecreaseProductInStockOnlyWithTheDifference`
+- `saveNewOrderShouldFailWhenLessProductsAreInStockThenOrdered`
+
 [Background material](https://1kevinson.com/testing-service-spring-boot/)
 
 ### Write integration tests
+
+
+### Write integration test with testcontainers
