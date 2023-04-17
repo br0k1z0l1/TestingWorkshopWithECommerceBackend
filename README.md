@@ -85,7 +85,7 @@ and running requests manually.
 
 ## Tasks
 
-### Write Unit tests for Product service
+### Write Unit tests for Order service
 
 Some suggestions for test method names:
 - `findAllShouldReturnWithOrderDaoResponse`
